@@ -7,154 +7,154 @@ st.set_page_config(
     layout="wide"
 )
 
-# 50 Detailed Errors Master Knowledge Base (Strictly Categorized by Diesel & Petrol)
+# Clean & Shortened Master Knowledge Base (Fully Visible in Dropdowns)
 MASTER_KNOWLEDGE_BASE = {
     # --- DIESEL ENGINE ERRORS (25) ---
-    "1. Diesel: Air Filter Choked (Dust Restriction)": {
+    "1. Air Filter Choked": {
         "type": "Diesel", "severity": "Low", "urgency": "Low",
         "causes": ["Heavy dust accumulation in intake paper filter element", "High ambient particulate matter blocking airflow"],
         "actions": ["Inspect air filter restriction indicator", "Clean element carefully with compressed air from inside out", "Check sealing gaskets"],
         "spares": ["Primary Air Filter Element", "Secondary Safety Element"]
     },
-    "2. Diesel: Day Tank Low Fuel Level Warning": {
+    "2. Day Tank Low Fuel Warning": {
         "type": "Diesel", "severity": "Low", "urgency": "Low",
         "causes": ["Fuel transfer pump set in manual mode", "Float switch stuck in low position"],
         "actions": ["Check fuel transfer switch position", "Inspect and clean float level switch contacts", "Verify manual valves"],
         "spares": ["Tank Float Level Switch", "Transfer Pump Relay"]
     },
-    "3. Diesel: Coolant Temperature Sensor Intermittent": {
+    "3. Coolant Temperature Sensor Fault": {
         "type": "Diesel", "severity": "Low", "urgency": "Low",
         "causes": ["Loose sensor wiring plug connector", "Corrosion on sender terminal pins"],
         "actions": ["Unplug connector, clean with contact spray, and reseat firmly", "Verify sensor resistance against engine temperature"],
         "spares": ["Coolant Temp Sender Unit", "Contact Cleaner Spray"]
     },
-    "4. Diesel: Alternator Low Charging Voltage": {
+    "4. Alternator Low Charging Voltage": {
         "type": "Diesel", "severity": "Low", "urgency": "Medium",
         "causes": ["Loose alternator drive V-belt tension", "Internal diode rectifier fatigue"],
         "actions": ["Check belt deflection", "Measure DC voltage across alternator output terminals while running (should exceed 27.5V)"],
         "spares": ["Alternator Drive Belt", "Internal Rectifier Assembly"]
     },
-    "5. Diesel: Water Separator Bowl Full": {
+    "5. Water Separator Bowl Full": {
         "type": "Diesel", "severity": "Low", "urgency": "Medium",
         "causes": ["Moisture condensation inside bulk underground diesel storage tank"],
         "actions": ["Open drain valve at bottom of water separator bowl and drain water until clean diesel flows"],
         "spares": ["Water Separator Drain Valve", "Fuel Pre-filter Assembly"]
     },
-    "6. Diesel: Exhaust Manifold Minor Soot Leak": {
+    "6. Exhaust Manifold Soot Leak": {
         "type": "Diesel", "severity": "Medium", "urgency": "Medium",
         "causes": ["Thermal expansion loosening exhaust stud nuts", "Aged graphite composite gasket"],
         "actions": ["Retorque exhaust manifold mounting nuts in star pattern", "Replace graphite gasket during next shutdown"],
         "spares": ["Graphite Exhaust Gasket", "Manifold Stud Nuts"]
     },
-    "7. Diesel: Governor Speed Potentiometer Drift": {
+    "7. Governor Potentiometer Drift": {
         "type": "Diesel", "severity": "Medium", "urgency": "Medium",
         "causes": ["Vibration causing multi-turn potentiometer setpoint shift"],
         "actions": ["Recalibrate idle and rated speed on governor module", "Lock potentiometer nut with threadlocker"],
         "spares": ["Speed Potentiometer Unit", "Threadlocker Adhesive"]
     },
-    "8. Diesel: Rocker Cover Gasket Oil Seepage": {
+    "8. Rocker Cover Gasket Oil Seepage": {
         "type": "Diesel", "severity": "Medium", "urgency": "Low",
         "causes": ["Rubber gasket hardening due to high heat cycles", "Uneven bolt torque"],
         "actions": ["Clean leaked oil area", "Retorque valve cover bolts evenly", "Replace rubber seal during major service"],
         "spares": ["Valve Cover Rubber Gasket Set"]
     },
-    "9. Diesel: Cooling Fan Belt Squeal": {
+    "9. Cooling Fan Belt Squeal": {
         "type": "Diesel", "severity": "Medium", "urgency": "Medium",
         "causes": ["Stretched fan drive belts", "Oil or coolant splashed onto pulleys"],
         "actions": ["Degrease pulleys using solvent spray", "Adjust spring-loaded tensioner to proper deflection"],
         "spares": ["Matched Fan Belt Set", "Pulley Cleaner Spray"]
     },
-    "10. Diesel: Fuel Lift Pump Internal Passing": {
+    "10. Fuel Lift Pump Internal Passing": {
         "type": "Diesel", "severity": "Medium", "urgency": "Medium",
         "causes": ["Debris stuck under mechanical/electric lift pump non-return valve"],
         "actions": ["Clean lift pump inlet banjo fitting and internal strainer screen", "Test delivery pressure (0.3 - 0.6 bar)"],
         "spares": ["Fuel Lift Pump Assembly", "Banjo Sealing Washers"]
     },
-    "11. Diesel: Control Panel HMI Display Flickering": {
+    "11. Control Panel Display Flickering": {
         "type": "Diesel", "severity": "Medium", "urgency": "Low",
         "causes": ["Control module internal power supply capacitor aging", "Loose 24V supply wire"],
         "actions": ["Check 24VDC incoming power stability", "Tighten terminal block screws inside control cabinet"],
         "spares": ["24VDC Industrial Power Supply", "Terminal Block Strip"]
     },
-    "12. Diesel: Crankcase Breather Dripping Oil": {
+    "12. Crankcase Breather Oil Dripping": {
         "type": "Diesel", "severity": "Medium", "urgency": "Low",
         "causes": ["Normal accumulation of oil vapor blow-by", "Blocked internal mesh trap in breather canister"],
         "actions": ["Inspect breather drain tube", "Clean internal mesh filter inside crankcase breather assembly"],
         "spares": ["Breather Filter Element", "Drain Tubing"]
     },
-    "13. Diesel: Radiator Core External Fin Choking": {
+    "13. Radiator Core Fin Choking": {
         "type": "Diesel", "severity": "Medium", "urgency": "Medium",
         "causes": ["Industrial dust, cotton lint, or insect buildup blocking airflow"],
         "actions": ["Blow compressed air from fan side outwards, followed by low-pressure warm water wash with coil cleaner"],
         "spares": ["Industrial Fin Comb Tool", "Radiator Cleaner Chemical"]
     },
-    "14. Diesel: Block Heater Thermostat Failure": {
+    "14. Block Heater Thermostat Failure": {
         "type": "Diesel", "severity": "Medium", "urgency": "Low",
         "causes": ["Block heater thermostat stuck", "Air pocket trapped inside heater chamber"],
         "actions": ["Bleed cooling air pocket from heater hose", "Test thermostat switching continuity at 40°C"],
         "spares": ["Block Heater Thermostat Switch", "Immersion Heater"]
     },
-    "15. Diesel: CT Secondary Wiring Loose Connection": {
+    "15. CT Secondary Wiring Loose": {
         "type": "Diesel", "severity": "High", "urgency": "High",
         "causes": ["Vibration shaking loose CT secondary terminal screws"],
         "actions": ["⚠️ CRITICAL SAFETY: Never open CT secondary circuit while loaded! Shut down generator before tightening CT terminals."],
         "spares": ["CT Terminal Lug Connectors", "Heat Shrink Tubing"]
     },
-    "16. Diesel: Injection Pump Delivery Valve Seepage": {
+    "16. Injection Pump Valve Seepage": {
         "type": "Diesel", "severity": "High", "urgency": "High",
         "causes": ["O-ring degradation under fuel pump delivery valve holder"],
         "actions": ["Isolate rail pressure, clean area, replace high-pressure delivery valve copper seal and O-ring"],
         "spares": ["Delivery Valve O-Ring Kit", "Copper Sealing Washer Set"]
     },
-    "17. Diesel: Turbocharger Wastegate Linkage Stuck": {
+    "17. Turbocharger Wastegate Stuck": {
         "type": "Diesel", "severity": "High", "urgency": "High",
         "causes": ["Carbon soot accumulation freezing wastegate butterfly spindle"],
         "actions": ["Spray penetrating oil on wastegate shaft hinge, manually free linkage motion"],
         "spares": ["Turbocharger Wastegate Actuator", "Penetrating Lubricant"]
     },
-    "18. Diesel: Alternator Bearing Spalling Noise": {
+    "18. Alternator Bearing Noise": {
         "type": "Diesel", "severity": "High", "urgency": "High",
         "causes": ["Over-greasing or under-greasing bearing housing during maintenance"],
         "actions": ["Listen with stethoscope", "Inject exact calculated quantity of high-temp polyurea grease"],
         "spares": ["Deep Groove Ball Bearing", "High-Temp Polyurea Grease"]
     },
-    "19. Diesel: MPU Sensor Air Gap Misalignment": {
+    "19. MPU Sensor Air Gap Misalignment": {
         "type": "Diesel", "severity": "High", "urgency": "High",
         "causes": ["MPU sensor touching flywheel ring gear teeth due to loose lock nut"],
         "actions": ["Remove MPU sensor, wipe magnetic tip clean", "Screw in until touching ring gear, back off 3/4 turn (0.8mm gap) and lock"],
         "spares": ["Magnetic Pickup Sensor (MPU)", "Lock Nut"]
     },
-    "20. Diesel: Fuel Return Line Restriction": {
+    "20. Fuel Return Line Restriction": {
         "type": "Diesel", "severity": "High", "urgency": "High",
         "causes": ["Kinked or swollen rubber fuel return hose"],
         "actions": ["Check fuel return line flow back to day tank", "Replace degraded rubber lines with reinforced tubing"],
         "spares": ["Diesel Fuel Return Hose", "Hose Clamp Set"]
     },
-    "21. Diesel: Very Low Voltage / No Excitation": {
+    "21. Very Low Voltage / No Excitation": {
         "type": "Diesel", "severity": "Critical", "urgency": "Critical",
         "causes": ["Complete loss of alternator residual magnetism", "Blown AVR fast-acting fuse"],
         "actions": ["Flash alternator field using external 12V battery across F+ and F- for 2 seconds while running", "Check AVR fuse"],
         "spares": ["AVR Protection Fuse", "Rotating Diode Bridge", "Automatic Voltage Regulator"]
     },
-    "22. Diesel: High Coolant Temperature Overheating": {
+    "22. High Coolant Temperature Overheating": {
         "type": "Diesel", "severity": "Critical", "urgency": "Critical",
         "causes": ["Thermostat stuck closed", "Water pump impeller eroded", "Radiator core internal scaling"],
         "actions": ["Test thermostat in boiling water", "Inspect water pump internal ceramic seal", "Perform acid descaling flush"],
         "spares": ["Engine Thermostat Valve", "Water Pump Repair Kit", "Coolant Concentrate"]
     },
-    "23. Diesel: Low Lube Oil Pressure Trip": {
+    "23. Low Lube Oil Pressure Trip": {
         "type": "Diesel", "severity": "Critical", "urgency": "Critical",
         "causes": ["Worn main crankshaft bearings", "Oil suction strainer fully choked with carbon/sludge"],
         "actions": ["Check oil pressure with mechanical master gauge", "Drop oil pan, inspect suction pickup screen and bearing clearance"],
         "spares": ["Main & Big-End Bearing Set", "Oil Pump Gear", "Suction Strainer"]
     },
-    "24. Diesel: Engine Overspeed Trip (Runaway)": {
+    "24. Engine Overspeed Trip (Runaway)": {
         "type": "Diesel", "severity": "Critical", "urgency": "Critical",
         "causes": ["Fuel injection pump rack stuck in full-fuel position", "Turbocharger oil seal failure feeding engine lube oil"],
         "actions": ["Check manual emergency air intake flap/guillotine shutoff valve", "Inspect turbocharger for oil leakage"],
         "spares": ["Emergency Air Shutoff Flap", "Electronic Governor Controller", "Turbocharger Cartridge"]
     },
-    "25. Diesel: Common Rail High Pressure Pump Seizure": {
+    "25. Common Rail High Pressure Pump Seizure": {
         "type": "Diesel", "severity": "Critical", "urgency": "Critical",
         "causes": ["Water or microscopic cat-fines in high pressure diesel fuel passing through HP pump"],
         "actions": ["Replace complete high pressure fuel pump, rail, and all injectors due to metal debris contamination", "Flush fuel tank"],
@@ -162,151 +162,151 @@ MASTER_KNOWLEDGE_BASE = {
     },
 
     # --- PETROL / GASOLINE ENGINE ERRORS (25) ---
-    "26. Petrol: Spark Plug Fouled / Carbon Deposit": {
+    "26. Spark Plug Fouled / Carbon Deposit": {
         "type": "Petrol", "severity": "Low", "urgency": "Low",
         "causes": ["Rich air-fuel mixture or excessive oil burning past valve guides"],
         "actions": ["Remove spark plugs, clean carbon soot with wire brush, check gap (0.7-0.8mm)", "Replace if electrode is worn"],
         "spares": ["Spark Plug Set", "Spark Plug Gapping Tool"]
     },
-    "27. Petrol: Carburetor Main Jet Minor Choke": {
+    "27. Carburetor Main Jet Minor Choke": {
         "type": "Petrol", "severity": "Low", "urgency": "Medium",
         "causes": ["Stale petrol gum and varnish deposits inside carburetor float bowl"],
         "actions": ["Drain carburetor float bowl, spray carburetor cleaner into jets, blow compressed air through passages"],
         "spares": ["Carb Repair Kit (Gaskets/Jets)", "Carb Cleaner Spray"]
     },
-    "28. Petrol: Automatic Choke Valve Sticking": {
+    "28. Automatic Choke Valve Sticking": {
         "type": "Petrol", "severity": "Low", "urgency": "Medium",
         "causes": ["Thermostatic spring or linkage gummed up with old fuel residue"],
         "actions": ["Clean automatic choke linkage with solvent, lubricate pivot points with light machine oil"],
         "spares": ["Choke Thermostatic Spring", "Carb Linkage Pin"]
     },
-    "29. Petrol: Fuel Tank Cap Air Vent Blocked": {
+    "29. Fuel Tank Cap Air Vent Blocked": {
         "type": "Petrol", "severity": "Low", "urgency": "Low",
         "causes": ["Dirt blocking small breather hole in petrol tank cap, creating vacuum lock"],
         "actions": ["Clear vent hole in fuel cap with fine needle, test fuel flow to carburetor"],
         "spares": ["Petrol Tank Cap Assembly"]
     },
-    "30. Petrol: Pull-Starter Recoil Cord Fraying": {
+    "30. Pull-Starter Recoil Cord Fraying": {
         "type": "Petrol", "severity": "Low", "urgency": "Low",
         "causes": ["Friction against starter housing eyelet during aggressive pulling"],
         "actions": ["Inspect recoil starter rope, unwind and replace frayed nylon cord before it snaps inside housing"],
         "spares": ["Nylon Starter Rope", "Recoil Spring Assembly"]
     },
-    "31. Petrol: Ignition Coil Resistance High / Weak Spark": {
+    "31. Ignition Coil Weak Spark": {
         "type": "Petrol", "severity": "Medium", "urgency": "Medium",
         "causes": ["Thermal breakdown of ignition coil winding insulation"],
         "actions": ["Test ignition coil primary and secondary resistance with multimeter against specs", "Replace coil if spark is weak yellow"],
         "spares": ["Solid State Ignition Coil Module", "Spark Plug Cap"]
     },
-    "32. Petrol: Low Idle Engine Speed / Stalling on Load": {
+    "32. Low Idle Speed / Stalling on Load": {
         "type": "Petrol", "severity": "Medium", "urgency": "Medium",
         "causes": ["Idle mixture screw out of adjustment", "Throttle stop screw loose"],
         "actions": ["Adjust idle speed screw until engine idles smoothly at 1500-1800 RPM", "Check governor linkage spring tension"],
         "spares": ["Governor Spring Set", "Idle Mixture Screw"]
     },
-    "33. Petrol: Fuel Sediment Cup Filter Sludge": {
+    "33. Fuel Sediment Cup Filter Sludge": {
         "type": "Petrol", "severity": "Medium", "urgency": "Low",
         "causes": ["Rust and sediment from unlined steel petrol tank settling in glass sediment bowl"],
         "actions": ["Shut off fuel valve, unscrew sediment bowl, wash mesh screen in clean petrol, replace O-ring"],
         "spares": ["Sediment Bowl Mesh Filter", "Rubber Bowl O-Ring"]
     },
-    "34. Petrol: Crankcase Oil Dilution by Petrol": {
+    "34. Crankcase Oil Dilution by Petrol": {
         "type": "Petrol", "severity": "Medium", "urgency": "High",
         "causes": ["Carburetor float needle valve passing fuel when engine stopped, leaking petrol into crankcase"],
         "actions": ["Check engine oil level (if oil smells of petrol and level is high, drain immediately)", "Repair carburetor float needle valve"],
         "spares": ["Carburetor Float & Needle Valve", "Engine Oil (SAE 10W30/15W40)"]
     },
-    "35. Petrol: Exhaust Muffler Spark Arrester Choked": {
+    "35. Exhaust Muffler Spark Arrester Choked": {
         "type": "Petrol", "severity": "Medium", "urgency": "Medium",
         "causes": ["Carbon soot accumulation on internal spark arrester wire mesh screen"],
         "actions": ["Remove muffler end cap, pull out spark arrester screen, burn off carbon with torch or wire brush"],
         "spares": ["Spark Arrester Screen", "Muffler Gasket"]
     },
-    "36. Petrol: Inverter Module Overload / Fault Light ON": {
+    "36. Inverter Module Overload Fault": {
         "type": "Petrol", "severity": "High", "urgency": "High",
         "causes": ["Connecting appliance exceeding inverter generator peak watt rating", "Internal inverter circuit board short"],
         "actions": ["Reset inverter overload circuit breaker", "Disconnect heavy loads, check sine wave inverter board for burnt transistors"],
         "spares": ["Inverter Control PCB", "Overload Reset Switch"]
     },
-    "37. Petrol: Flywheel Permanent Magnet Demagnetization": {
+    "37. Flywheel Magnet Demagnetization": {
         "type": "Petrol", "severity": "High", "urgency": "High",
         "causes": ["External heat source or physical impact weakening flywheel neodymium/alnico magnets"],
         "actions": ["Check spark voltage and generator AC output", "Replace flywheel rotor if magnetic field strength is insufficient"],
         "spares": ["Flywheel Magnet Rotor Assembly", "Woodruff Key"]
     },
-    "38. Petrol: Governor Arm Spring Fatigue / Stretching": {
+    "38. Governor Arm Spring Fatigue": {
         "type": "Petrol", "severity": "High", "urgency": "High",
         "causes": ["Mechanical governor spring losing tension over extended operating hours"],
         "actions": ["Check governor arm linkage play and spring tension", "Replace stretched governor spring to restore frequency stability under load"],
         "spares": ["Governor Control Spring Set", "Linkage Rod Clip"]
     },
-    "39. Petrol: Intake Manifold Vacuum Leak (O-Ring Hardening)": {
+    "39. Intake Manifold Vacuum Leak": {
         "type": "Petrol", "severity": "High", "urgency": "High",
         "causes": ["Phenolic spacer insulator O-ring between carburetor and cylinder head cracked, causing lean mixture surge"],
         "actions": ["Spray starter fluid around carburetor flange while idling; if RPM surges, replace intake insulator O-rings"],
         "spares": ["Carb Insulator O-Ring Kit", "Phenolic Spacer Plate"]
     },
-    "40. Petrol: Recoil Starter Pawl / Ratchet Breakage": {
+    "40. Recoil Starter Pawl Breakage": {
         "type": "Petrol", "severity": "High", "urgency": "High",
         "causes": ["Forceful pulling breaking starter cup metal pawl or return spring"],
         "actions": ["Remove recoil starter assembly, inspect internal plastic/metal dog pawls and return spring"],
         "spares": ["Recoil Starter Assembly", "Starter Dog Pawl Kit"]
     },
-    "41. Petrol: Low Compression Due to Exhaust Valve Burnout": {
+    "41. Low Compression (Exhaust Valve Burnout)": {
         "type": "Petrol", "severity": "Critical", "urgency": "Critical",
         "causes": ["Running with tight valve clearance, causing exhaust valve to remain slightly open and burn seat"],
         "actions": ["Perform cylinder compression test", "Remove cylinder head, lap or replace burnt exhaust valve and reset valve lash (0.15mm)"],
         "spares": ["Exhaust Valve & Guide", "Cylinder Head Gasket", "Valve Spring"]
     },
-    "42. Petrol: Ignition Timing Advance Key Sheared": {
+    "42. Ignition Timing Woodruff Key Sheared": {
         "type": "Petrol", "severity": "Critical", "urgency": "Critical",
         "causes": ["Sudden kickback or overload shearing flywheel Woodruff key, throwing ignition timing off"],
         "actions": ["Remove flywheel nut and flywheel puller, inspect Woodruff key slot, replace sheared half-moon key and torque nut to spec"],
         "spares": ["Flywheel Woodruff Key", "Flywheel Nut"]
     },
-    "43. Petrol: Crankshaft Connecting Rod Bearing Seizure": {
+    "43. Connecting Rod Bearing Seizure": {
         "type": "Petrol", "severity": "Critical", "urgency": "Critical",
         "causes": ["Running air-cooled petrol generator with low engine oil or no oil (triggering low oil alert failure)"],
         "actions": ["Engine locked solid; dismantle crankcase, replace connecting rod, grind or replace crankshaft journal"],
         "spares": ["Connecting Rod Assembly", "Crankshaft", "Oil Alert Switch"]
     },
-    "44. Petrol: Automatic Voltage Regulator (AVR) Burnt": {
+    "44. Automatic Voltage Regulator (AVR) Burnt": {
         "type": "Petrol", "severity": "Critical", "urgency": "Critical",
         "causes": ["Short circuit in generator power output receptacle or lightning surge"],
         "actions": ["Inspect round or square AVR module inside alternator rear cover for charred resin and burnt diodes", "Replace AVR"],
         "spares": ["Generator AVR (Brushless Type)", "Carbon Brushes"]
     },
-    "45. Petrol: Low Oil Alert Sensor False Tripping": {
+    "45. Low Oil Alert Sensor False Tripping": {
         "type": "Petrol", "severity": "Critical", "urgency": "Critical",
         "causes": ["Low oil sensor float stuck in open position even with full oil, killing ignition spark"],
         "actions": ["Check engine oil dipstick level first", "Disconnect low oil sensor wire temporarily to test if engine starts; replace faulty sensor switch"],
         "spares": ["Low Oil Level Sensor Switch", "Crankcase Gasket"]
     },
-    "46. Petrol: Fuel Shutoff Solenoid (Electric) Failure": {
+    "46. Fuel Shutoff Solenoid Failure": {
         "type": "Petrol", "severity": "High", "urgency": "High",
         "causes": ["Carburetor fuel solenoid plunger stuck closed due to gummed fuel, preventing fuel entry"],
         "actions": ["Check 12V power supply to carburetor fuel solenoid on key ON", "Clean plunger pin or replace solenoid valve"],
         "spares": ["Carb Fuel Shutoff Solenoid Valve"]
     },
-    "47. Petrol: Stator Winding Insulation Breakdown": {
+    "47. Stator Winding Insulation Breakdown": {
         "type": "Petrol", "severity": "Critical", "urgency": "Critical",
         "causes": ["Generator stored in damp outdoor rainy environment without running, absorbing moisture in copper windings"],
         "actions": ["Measure winding insulation resistance with megger tester (<1 Megaohm is unsafe)", "Bake/dry windings using heat gun"],
         "spares": ["Insulation Varnish Spray", "Stator Winding Assembly"]
     },
-    "48. Petrol: Fuel Tank Internal Rust Flakes Choking Petcock": {
+    "48. Fuel Tank Rust Choking Petcock": {
         "type": "Petrol", "severity": "High", "urgency": "High",
         "causes": ["Unlined metal petrol tank rusting internally, sending flakes down to fuel valve screen"],
         "actions": ["Remove fuel tank petcock valve, clean internal strainer finger screen, flush tank with rust remover solution"],
         "spares": ["Fuel Tank Petcock Valve", "Tank Seal Ring"]
     },
-    "49. Petrol: Cylinder Head Warpage Causing Compression Blow": {
+    "49. Cylinder Head Warpage (Compression Blow)": {
         "type": "Petrol", "severity": "Critical", "urgency": "Critical",
         "causes": ["Severe overheating from running low on oil or overloaded in extreme ambient heat"],
         "actions": ["Check cylinder head mating surface with feeler gauge and straight edge against surface plate", "Resurface or replace head"],
         "spares": ["Cylinder Head Casting", "Head Gasket", "Valve Cover Gasket"]
     },
-    "50. Petrol: Starting Recoil Spring Uncoiled / Broken": {
+    "50. Recoil Starter Spring Broken": {
         "type": "Petrol", "severity": "Medium", "urgency": "Medium",
         "causes": ["Pulling starter rope past maximum limit or letting snap back violently"],
         "actions": ["Carefully rewind or replace broken recoil flat spring inside starter pulley reel (wear safety glasses)"],
